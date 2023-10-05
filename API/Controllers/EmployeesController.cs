@@ -11,6 +11,7 @@ using Microsoft.Extensions.Logging;
 namespace API.Controllers
 {
     [Route("[controller]")]
+    [ApiController]
     public class EmployeesController : Controller
     {
         private readonly IEmployeeRepo _employeeRepo;
