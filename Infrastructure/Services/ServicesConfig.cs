@@ -17,7 +17,7 @@ namespace Infrastructure.Services
         {
             services.AddDbContext<AppDbContext>(options =>
             {
-                options.UseSqlite(config.GetConnectionString("connection"));
+                options.UseSqlite(config.GetConnectionString("Default"));
             });
 
             services.AddScoped<IEmployeeRepo, EmployeeRepository>();

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5I8VeHFsX3Oo2u3ERiD+fTBaT5RQuUznERsZoQuoHQQddZ85SRVmj3hoGMA8uYtVGzaIHkfPNDLd0CiXn87QFg==",
+  "dgSpecHash": "sXacS143keLzfffjfGJb3hNQfn9TsewCmYtloKgKRV/70mFY80lEHpQSiapZSKSjGi9b4INtCQxeGVEW0Xeahg==",
   "success": true,
-  "projectFilePath": "d:\\Test\\CRUD\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "D:\\Test\\CRUD\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mafaroq\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\mafaroq\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.0\\microsoft.data.sqlite.core.7.0.0.nupkg.sha512",

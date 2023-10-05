@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Domain/1.0.0": {
+      "type": "project",
+      "path": "../Domain/Domain.csproj",
+      "msbuildProject": "../Domain/Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\mafaroq\\.nuget\\packages\\": {}
@@ -13,9 +32,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Test\\CRUD\\Application\\Application.csproj",
-      "projectName": "Application",
-      "projectPath": "D:\\Test\\CRUD\\Application\\Application.csproj",
+      "projectUniqueName": "D:\\Test\\CRUD\\Application\\application.csproj",
+      "projectName": "application",
+      "projectPath": "D:\\Test\\CRUD\\Application\\application.csproj",
       "packagesPath": "C:\\Users\\mafaroq\\.nuget\\packages\\",
       "outputPath": "D:\\Test\\CRUD\\Application\\obj\\",
       "projectStyle": "PackageReference",
@@ -33,7 +52,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Test\\CRUD\\Domain\\Domain.csproj": {
+              "projectPath": "D:\\Test\\CRUD\\Domain\\Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

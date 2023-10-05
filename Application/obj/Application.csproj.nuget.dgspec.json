@@ -1,17 +1,76 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Test\\CRUD\\Application\\Application.csproj": {}
+    "D:\\Test\\CRUD\\Application\\application.csproj": {}
   },
   "projects": {
-    "D:\\Test\\CRUD\\Application\\Application.csproj": {
+    "D:\\Test\\CRUD\\Application\\application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Test\\CRUD\\Application\\Application.csproj",
-        "projectName": "Application",
-        "projectPath": "D:\\Test\\CRUD\\Application\\Application.csproj",
+        "projectUniqueName": "D:\\Test\\CRUD\\Application\\application.csproj",
+        "projectName": "application",
+        "projectPath": "D:\\Test\\CRUD\\Application\\application.csproj",
         "packagesPath": "C:\\Users\\mafaroq\\.nuget\\packages\\",
         "outputPath": "D:\\Test\\CRUD\\Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\mafaroq\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\Test\\CRUD\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\Test\\CRUD\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Test\\CRUD\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Test\\CRUD\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "D:\\Test\\CRUD\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\mafaroq\\.nuget\\packages\\",
+        "outputPath": "D:\\Test\\CRUD\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mafaroq\\AppData\\Roaming\\NuGet\\NuGet.Config",

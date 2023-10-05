@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Test\\CRUD\\Infrastructure\\Infrastructure.csproj": {}
+    "D:\\Test\\CRUD\\Infrastructure\\Infrastructure.csproj": {}
   },
   "projects": {
-    "d:\\Test\\CRUD\\Application\\application.csproj": {
+    "D:\\Test\\CRUD\\Application\\application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Test\\CRUD\\Application\\application.csproj",
+        "projectUniqueName": "D:\\Test\\CRUD\\Application\\application.csproj",
         "projectName": "application",
-        "projectPath": "d:\\Test\\CRUD\\Application\\application.csproj",
+        "projectPath": "D:\\Test\\CRUD\\Application\\application.csproj",
         "packagesPath": "C:\\Users\\mafaroq\\.nuget\\packages\\",
-        "outputPath": "d:\\Test\\CRUD\\Application\\obj\\",
+        "outputPath": "D:\\Test\\CRUD\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mafaroq\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "d:\\Test\\CRUD\\Domain\\Domain.csproj": {
-                "projectPath": "d:\\Test\\CRUD\\Domain\\Domain.csproj"
+              "D:\\Test\\CRUD\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\Test\\CRUD\\Domain\\Domain.csproj"
               }
             }
           }
@@ -63,14 +63,14 @@
         }
       }
     },
-    "d:\\Test\\CRUD\\Domain\\Domain.csproj": {
+    "D:\\Test\\CRUD\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Test\\CRUD\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\Test\\CRUD\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "d:\\Test\\CRUD\\Domain\\Domain.csproj",
+        "projectPath": "D:\\Test\\CRUD\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\mafaroq\\.nuget\\packages\\",
-        "outputPath": "d:\\Test\\CRUD\\Domain\\obj\\",
+        "outputPath": "D:\\Test\\CRUD\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mafaroq\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -118,14 +118,14 @@
         }
       }
     },
-    "d:\\Test\\CRUD\\Infrastructure\\Infrastructure.csproj": {
+    "D:\\Test\\CRUD\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Test\\CRUD\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "D:\\Test\\CRUD\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "d:\\Test\\CRUD\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "D:\\Test\\CRUD\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\mafaroq\\.nuget\\packages\\",
-        "outputPath": "d:\\Test\\CRUD\\Infrastructure\\obj\\",
+        "outputPath": "D:\\Test\\CRUD\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mafaroq\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -135,17 +135,18 @@
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "d:\\Test\\CRUD\\Application\\application.csproj": {
-                "projectPath": "d:\\Test\\CRUD\\Application\\application.csproj"
+              "D:\\Test\\CRUD\\Application\\application.csproj": {
+                "projectPath": "D:\\Test\\CRUD\\Application\\application.csproj"
               },
-              "d:\\Test\\CRUD\\Domain\\Domain.csproj": {
-                "projectPath": "d:\\Test\\CRUD\\Domain\\Domain.csproj"
+              "D:\\Test\\CRUD\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\Test\\CRUD\\Domain\\Domain.csproj"
               }
             }
           }
@@ -175,6 +176,8 @@
               "version": "[7.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.0, )"
             }

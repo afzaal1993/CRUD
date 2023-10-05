@@ -10,6 +10,7 @@ namespace Domain.Entities
         public BaseEntity()
         {
             Id = Guid.NewGuid().GetHashCode();
+            CreatedAt = DateTime.Now;
         }
         public int Id { get; set; }
         public DateTime CreatedAt { get; set; }

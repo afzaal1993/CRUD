@@ -5,7 +5,7 @@
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Humanizer.dll": {
+          "lib/net6.0/_._": {
             "related": ".xml"
           }
         },
@@ -354,7 +354,7 @@
           "System.CodeDom": "4.4.0"
         },
         "compile": {
-          "lib/netstandard2.0/Mono.TextTemplating.dll": {}
+          "lib/netstandard2.0/_._": {}
         },
         "runtime": {
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
@@ -502,7 +502,7 @@
       "System.CodeDom/4.4.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/System.CodeDom.dll": {
+          "ref/netstandard2.0/_._": {
             "related": ".xml"
           }
         },
@@ -1339,11 +1339,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Test\\CRUD\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "D:\\Test\\CRUD\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "d:\\Test\\CRUD\\Infrastructure\\Infrastructure.csproj",
+      "projectPath": "D:\\Test\\CRUD\\Infrastructure\\Infrastructure.csproj",
       "packagesPath": "C:\\Users\\mafaroq\\.nuget\\packages\\",
-      "outputPath": "d:\\Test\\CRUD\\Infrastructure\\obj\\",
+      "outputPath": "D:\\Test\\CRUD\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mafaroq\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1353,17 +1353,18 @@
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "d:\\Test\\CRUD\\Application\\application.csproj": {
-              "projectPath": "d:\\Test\\CRUD\\Application\\application.csproj"
+            "D:\\Test\\CRUD\\Application\\application.csproj": {
+              "projectPath": "D:\\Test\\CRUD\\Application\\application.csproj"
             },
-            "d:\\Test\\CRUD\\Domain\\Domain.csproj": {
-              "projectPath": "d:\\Test\\CRUD\\Domain\\Domain.csproj"
+            "D:\\Test\\CRUD\\Domain\\Domain.csproj": {
+              "projectPath": "D:\\Test\\CRUD\\Domain\\Domain.csproj"
             }
           }
         }
