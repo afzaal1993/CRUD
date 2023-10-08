@@ -39,7 +39,7 @@ namespace Infrastructure.Repositories
             return _context.Employees.FindAsync(id).Result;
         }
 
-        public async Task<IReadOnlyList<Employee>> GetEmployees()
+        public async Task<List<Employee>> GetEmployees()
         {
             return await _context.Employees.ToListAsync();
         }

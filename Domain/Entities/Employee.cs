@@ -9,8 +9,11 @@ namespace Domain.Entities
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string Street { get; set; }
-        public string City { get; set; }
-        public string State { get; set; }
+
+        //Navigation Proerties
+        public int DepartmentId { get; set; }
+        public Department Department { get; set; }
+        public int AddressId { get; set; }
+        public Address Address { get; set; }
     }
 }

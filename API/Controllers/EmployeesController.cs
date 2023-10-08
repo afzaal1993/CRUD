@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Application.Interfaces;
 using Domain.Entities;
+using Domain.Utilities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -21,9 +22,11 @@ namespace API.Controllers
         }
 
         [HttpGet]
-        public async Task<IReadOnlyList<Employee>> GetEmployees()
+        [ProducesResponseType(typeof(ApiResponse<List<Employee>>), 200)]
+        public async Task<IActionResult> GetEmployees()
         {
-            return await _employeeRepo.GetEmployees();
+            var result = await _employeeRepo.GetEmployees();
+            return Ok(ApiResponse<List<Employee>>.Success(result));
         }
 
         [HttpGet("{id}")]
@@ -34,7 +37,8 @@ namespace API.Controllers
 
         [HttpPost]
         [Route("Create")]
-        public ActionResult CreateEmployee(Employee employee)
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        public IActionResult CreateEmployee(Employee employee)
         {
             var result = _employeeRepo.CreateEmployee(employee);
             return CreatedAtAction("GetEmployeeById", new { id = employee.Id }, employee);

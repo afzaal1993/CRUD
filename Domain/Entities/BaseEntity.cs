@@ -7,12 +7,11 @@ namespace Domain.Entities
 {
     public class BaseEntity
     {
-        public BaseEntity()
-        {
-            Id = Guid.NewGuid().GetHashCode();
-            CreatedAt = DateTime.Now;
-        }
         public int Id { get; set; }
-        public DateTime CreatedAt { get; set; }
+        public bool IsActive { get; set; } = true;
+        public DateTime? CreatedDate { get; set; }
+        public string CreatedBy { get; set; }
+        public DateTime? ModifiedDate { get; set; }
+        public string ModifiedBy { get; set; }
     }
 }

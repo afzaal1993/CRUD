@@ -8,7 +8,7 @@ namespace Application.Interfaces
 {
     public interface IEmployeeRepo
     {
-        Task<IReadOnlyList<Employee>> GetEmployees();
+        Task<List<Employee>> GetEmployees();
         Employee GetEmployeeById(int id);
         Employee CreateEmployee(Employee employee);
         Employee UpdateEmployee(Employee employee);

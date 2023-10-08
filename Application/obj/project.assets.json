@@ -27,19 +27,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mafaroq\\.nuget\\packages\\": {}
+    "C:\\Users\\afzaal\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Test\\CRUD\\Application\\application.csproj",
-      "projectName": "application",
-      "projectPath": "D:\\Test\\CRUD\\Application\\application.csproj",
-      "packagesPath": "C:\\Users\\mafaroq\\.nuget\\packages\\",
-      "outputPath": "D:\\Test\\CRUD\\Application\\obj\\",
+      "projectUniqueName": "D:\\CRUD\\Application\\Application.csproj",
+      "projectName": "Application",
+      "projectPath": "D:\\CRUD\\Application\\Application.csproj",
+      "packagesPath": "C:\\Users\\afzaal\\.nuget\\packages\\",
+      "outputPath": "D:\\CRUD\\Application\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\mafaroq\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\afzaal\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -53,8 +57,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Test\\CRUD\\Domain\\Domain.csproj": {
-              "projectPath": "D:\\Test\\CRUD\\Domain\\Domain.csproj"
+            "D:\\CRUD\\Domain\\Domain.csproj": {
+              "projectPath": "D:\\CRUD\\Domain\\Domain.csproj"
             }
           }
         }
@@ -84,7 +88,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
