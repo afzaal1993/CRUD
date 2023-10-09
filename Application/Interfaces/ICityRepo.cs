@@ -6,7 +6,7 @@ using Domain.Entities;
 
 namespace Application.Interfaces
 {
-    public interface IEmployeeRepo : IGenericRepo<Employee>
+    public interface ICityRepo : IGenericRepo<City>
     {
 
     }

@@ -3,11 +3,7 @@ using Domain.Utilities;
 
 namespace Application;
 
-public interface IRegionRepo
+public interface IRegionRepo : IGenericRepo<Region>
 {
-    Task<List<Region>> GetAll();
-    Region GetById(int id);
-    Task<bool> Create(Region region);
-    Task<bool> Update(Region region);
-    Task<bool> Delete(int id);
+
 }

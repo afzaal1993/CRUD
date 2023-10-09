@@ -1,32 +1,49 @@
 ﻿using Application;
 using Domain.Entities;
+using Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure;
 
 public class GenericRepository<T> : IGenericRepo<T> where T : class
 {
-    public Task<bool> AddAsync(T entity)
+    private readonly AppDbContext _context;
+    private readonly DbSet<T> _dbSet;
+    public GenericRepository(AppDbContext context)
     {
-        throw new NotImplementedException();
+        _context = context;
+        _dbSet = _context.Set<T>();
+    }
+    public void Add(T entity)
+    {
+        _context.Set<T>().Add(entity);
     }
 
-    public Task<bool> DeleteAsync(int id)
+    public void Delete(T entity)
     {
-        throw new NotImplementedException();
+        _context.Set<T>().Remove(entity);
     }
 
-    public Task<List<T>> GetAllAsync()
+    public IEnumerable<T> GetAll()
     {
-        throw new NotImplementedException();
+        return _context.Set<T>().ToList();
     }
 
-    public Task<T> GetByIdAsync(int id)
+    public T GetById(int id)
     {
-        throw new NotImplementedException();
+        return _context.Set<T>().Find(id);
     }
 
-    public Task<bool> UpdateAsync(T entity)
+    public void Update(T entity)
     {
-        throw new NotImplementedException();
+        var entry = _context.Entry(entity);
+        if (entry.State == EntityState.Detached)
+        {
+            _dbSet.Attach(entity);
+            entry.State = EntityState.Modified;
+        }
+
+        entry.Property("CreatedBy").IsModified = false;
+        entry.Property("CreatedDate").IsModified = false;
     }
 }

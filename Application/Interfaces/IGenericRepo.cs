@@ -4,9 +4,9 @@ namespace Application;
 
 public interface IGenericRepo<T> where T : class
 {
-    Task<T> GetByIdAsync(int id);
-    Task<List<T>> GetAllAsync();
-    Task<bool> AddAsync(T entity);
-    Task<bool> UpdateAsync(T entity);
-    Task<bool> DeleteAsync(int id);
+    T GetById(int id);
+    IEnumerable<T> GetAll();
+    void Add(T entity);
+    void Update(T entity);
+    void Delete(T entity);
 }

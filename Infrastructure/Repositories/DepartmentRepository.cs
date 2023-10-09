@@ -5,13 +5,12 @@ using System.Threading.Tasks;
 using Application.Interfaces;
 using Domain.Entities;
 using Infrastructure.Data;
-using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Repositories
 {
-    public class EmployeeRepository : GenericRepository<Employee>, IEmployeeRepo
+    public class DepartmentRepository : GenericRepository<Department>, IDepartmentRepo
     {
-        public EmployeeRepository(AppDbContext context) : base(context)
+        public DepartmentRepository(AppDbContext context) : base(context)
         {
 
         }
