@@ -8,12 +8,12 @@
     ".NETCoreApp,Version=v7.0": {
       "Infrastructure/1.0.0": {
         "dependencies": {
+          "Application": "1.0.0",
           "Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.0",
           "Microsoft.EntityFrameworkCore.Design": "7.0.0",
           "Microsoft.EntityFrameworkCore.Sqlite": "7.0.0",
-          "Microsoft.EntityFrameworkCore.Tools": "7.0.0",
-          "application": "1.0.0"
+          "Microsoft.EntityFrameworkCore.Tools": "7.0.0"
         },
         "runtime": {
           "Infrastructure.dll": {}
@@ -396,12 +396,12 @@
           "System.Text.Encodings.Web": "7.0.0"
         }
       },
-      "application/1.0.0": {
+      "Application/1.0.0": {
         "dependencies": {
           "Domain": "1.0.0"
         },
         "runtime": {
-          "application.dll": {}
+          "Application.dll": {}
         }
       },
       "Domain/1.0.0": {
@@ -620,7 +620,7 @@
       "path": "system.text.json/7.0.0",
       "hashPath": "system.text.json.7.0.0.nupkg.sha512"
     },
-    "application/1.0.0": {
+    "Application/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

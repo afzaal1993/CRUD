@@ -56,7 +56,7 @@ namespace Infrastructure.Migrations
 
                     b.HasIndex("RegionId");
 
-                    b.ToTable("Address");
+                    b.ToTable("Addresses");
                 });
 
             modelBuilder.Entity("Domain.Entities.City", b =>
@@ -90,7 +90,7 @@ namespace Infrastructure.Migrations
 
                     b.HasIndex("RegionId");
 
-                    b.ToTable("City");
+                    b.ToTable("Cities");
                 });
 
             modelBuilder.Entity("Domain.Entities.Department", b =>
@@ -119,7 +119,7 @@ namespace Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Department");
+                    b.ToTable("Departments");
                 });
 
             modelBuilder.Entity("Domain.Entities.Employee", b =>
@@ -190,7 +190,7 @@ namespace Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Region");
+                    b.ToTable("Regions");
                 });
 
             modelBuilder.Entity("Domain.Entities.Address", b =>

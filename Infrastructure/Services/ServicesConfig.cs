@@ -20,7 +20,7 @@ namespace Infrastructure.Services
                 options.UseSqlite(config.GetConnectionString("Default"));
             });
 
-            services.AddScoped<IEmployeeRepo, EmployeeRepository>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             return services;
         }

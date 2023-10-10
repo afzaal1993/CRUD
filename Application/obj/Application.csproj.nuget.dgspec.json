@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "D:\\CRUD\\Application\\application.csproj": {}
+    "D:\\CRUD\\Application\\Application.csproj": {}
   },
   "projects": {
-    "D:\\CRUD\\Application\\application.csproj": {
+    "D:\\CRUD\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CRUD\\Application\\application.csproj",
-        "projectName": "application",
-        "projectPath": "D:\\CRUD\\Application\\application.csproj",
+        "projectUniqueName": "D:\\CRUD\\Application\\Application.csproj",
+        "projectName": "Application",
+        "projectPath": "D:\\CRUD\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\afzaal\\.nuget\\packages\\",
         "outputPath": "D:\\CRUD\\Application\\obj\\",
         "projectStyle": "PackageReference",

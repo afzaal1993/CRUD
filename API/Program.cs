@@ -16,6 +16,8 @@ builder.Services.AddCors(options => options.AddDefaultPolicy(options =>
     options.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
 }));
 
+builder.Services.AddAutoMapper(typeof(Program));
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

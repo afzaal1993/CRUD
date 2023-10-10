@@ -156,3 +156,5 @@ D:\CRUD\API\obj\Debug\net7.0\refint\API.dll
 D:\CRUD\API\obj\Debug\net7.0\API.pdb
 D:\CRUD\API\obj\Debug\net7.0\API.genruntimeconfig.cache
 D:\CRUD\API\obj\Debug\net7.0\ref\API.dll
+D:\CRUD\API\bin\Debug\net7.0\AutoMapper.dll
+D:\CRUD\API\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
